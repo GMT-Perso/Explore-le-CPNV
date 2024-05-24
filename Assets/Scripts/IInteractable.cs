@@ -8,5 +8,5 @@ public interface IInteractable
     public string InteractionPrompt { get; }
 
     //This set object so we can interact with it.
-    public bool Interact(Interactor interactor);
+    public void Interact(Interactor interactor);
 }

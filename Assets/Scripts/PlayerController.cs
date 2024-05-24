@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             //Calculation are made to know the target angle and the future angle of the character.
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-
+            
             //Rotation of the character in the direction wanted.
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 

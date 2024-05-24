@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class InteractionPromptUI : MonoBehaviour
+public class InteractionPromptUI : PromptUI
 {
 
     //Initialization of Variables and Objets.
     private Camera _mainCam;
-    [SerializeField] private GameObject _uiPanel;
     [SerializeField] private TextMeshProUGUI _promptText;
 
     // Start is called before the first frame update
@@ -31,21 +31,10 @@ public class InteractionPromptUI : MonoBehaviour
         transform.LookAt(transform.position + rotation  * Vector3.forward, rotation * Vector3.up);
     }
 
-    //Set a variable to know if the text is displayed or not.
-    public bool IsDisplayed = false;
-
     //This function set up the text that will be prompt and display it by activating the UI panel.
     public void SetUp(string promptText)
     {
         _promptText.text = promptText;
-        _uiPanel.SetActive(true);
-        IsDisplayed = true;
-    }
-
-    //This function close the UI panel by setting it to diseable.
-    public void Close()
-    {
-        _uiPanel?.SetActive(false);
-        IsDisplayed= false;
+        Open();
     }
 }
