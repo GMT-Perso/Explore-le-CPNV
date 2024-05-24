@@ -20,8 +20,8 @@ public class SceneLoader : MonoBehaviour
         
     }
     //This is gonna open a scene.
-    public void Load(Interactor interactor)
+    public void Load(string sceneName)
     {
-        SceneManager.LoadScene(_scenes[0]);
+        SceneManager.LoadScene(sceneName);
     }
 }

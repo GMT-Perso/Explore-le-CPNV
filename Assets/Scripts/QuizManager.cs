@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuizManager : MonoBehaviour
 {
 
-    private Quiz[] _quizzes;
+    private List<Quiz> _quizzes;
 
 
     // Start is called before the first frame update

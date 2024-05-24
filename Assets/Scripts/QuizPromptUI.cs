@@ -34,6 +34,13 @@ public class QuizPromptUI : PromptUI
 
    public void Answer(int buttonId)
     {
-
+        if (_quiz.Questions[_questionIndex].Answers[buttonId].IsRight)
+        {
+            Debug.Log("Correct answer");
+        }
+        else
+        {
+            Debug.Log("Wrong answer");
+        }
     }
 }
