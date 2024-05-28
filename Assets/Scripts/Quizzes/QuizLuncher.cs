@@ -7,20 +7,9 @@ public class QuizLuncher : MonoBehaviour
     [SerializeField] private QuizPromptUI _quizPromptUI;
     [SerializeField] private int _quizId;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Launch()
     {
-        _quizPromptUI.Setup();
+        var quiz = QuizManager.Instance.GetById(_quizId);
+        if (!quiz.IsDone) _quizPromptUI.Setup(quiz);
     }
 }
