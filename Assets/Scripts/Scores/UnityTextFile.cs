@@ -19,7 +19,7 @@ public class UnityTextFile
     public void Write(string fileName, string text)
     {
         // Save the file path as a variable
-        string path = "Assets/Resources/" + fileName;
+        string path = "Saves/" + fileName;
 
         //Write the text to the file
         File.WriteAllText(path, text);
@@ -33,7 +33,7 @@ public class UnityTextFile
     public string Read(string fileName)
     {
         // Save the file path as a variable
-        string path = "Assets/Resources/" + fileName;
+        string path = "Saves/" + fileName;
 
         //Read the text from directly from the fileName file
         StreamReader reader = new StreamReader(path);
