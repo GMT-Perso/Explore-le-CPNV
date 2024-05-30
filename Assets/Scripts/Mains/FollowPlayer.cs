@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class makes the camera follow the player.
+/// </summary>
 public class FollowPlayer : MonoBehaviour
 {
 

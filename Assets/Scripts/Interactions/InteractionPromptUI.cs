@@ -31,7 +31,10 @@ public class InteractionPromptUI : PromptUI
         transform.LookAt(transform.position + rotation  * Vector3.forward, rotation * Vector3.up);
     }
 
-    //This function set up the text that will be prompt and display it by activating the UI panel.
+    /// <summary>
+    /// This function set up the text that will be prompt and display it by activating the UI panel.
+    /// </summary>
+    /// <param name="promptText"> The text that have to be prompted. </param>
     public void SetUp(string promptText)
     {
         _promptText.text = promptText;

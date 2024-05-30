@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class is how data are stored for the quizzes.
+/// </summary>
 [System.Serializable]
 public class Quiz
 {

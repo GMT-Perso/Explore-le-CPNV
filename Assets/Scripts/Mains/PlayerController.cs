@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class manage the player controller depending on user input.
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
     //Set the controler of the player and the animator component
@@ -13,9 +16,13 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //We get the animator component.
+        // e get the animator component.
         playerAnim = GetComponent<Animator>();
+
+        // Set the time to normal to ensure the game isn't in pause.
         Time.timeScale = 1;
+
+        // Hide the mouse cursor and lock it.
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
