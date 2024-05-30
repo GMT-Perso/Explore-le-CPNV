@@ -12,6 +12,10 @@ public class UnityEventInteractor : MonoBehaviour, IInteractable
     
     public void Interact(Interactor interactor)
     {
+        if (_prompt.Contains("quiz"))
+        {
+            _prompt = "Vous avez termine ce quiz !";
+        }
         _onInteract.Invoke();
     }
 }
