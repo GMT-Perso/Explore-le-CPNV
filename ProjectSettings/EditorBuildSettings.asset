@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/C214.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/C213.unity
+    guid: 463b56f55dc6c2f4995dcaaffb9bc46e
+  - enabled: 1
     path: Assets/Scenes/ScoreSaving.unity
     guid: 923427119ecd4f84a87281fd1b7b5004
   m_configObjects: {}

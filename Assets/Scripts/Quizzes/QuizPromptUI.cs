@@ -55,10 +55,6 @@ public class QuizPromptUI : PromptUI
         {
             ScoreManager.Instance.MyScore.Add(150);
         }
-        else
-        {
-            Debug.Log("Wrong answer");
-        }
 
         if (_questionIndex == _quiz.Questions.Length - 1)
         {
