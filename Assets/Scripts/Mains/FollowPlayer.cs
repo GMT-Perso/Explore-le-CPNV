@@ -11,6 +11,6 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         //We move the camera at the position of the player with an offset.
-        transform.position = player.transform.position + new Vector3(0, 8, 0);
+        transform.position = player.transform.position + new Vector3(0, 7, 0);
     }
 }
